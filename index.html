@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jakob Klucke – Portfolio</title>
+  
+  <!-- Google Fonts Poppins -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'>
+  
+  <!-- Lokales Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="https://i.postimg.cc/yYxCBx2D/Jakob-Memoji-Mittig-200.png" alt="avatar" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Jakob Klucke">Jakob Klucke</h1>
+          <p class="title">Tonmeister – Musikproduzent – Videoeditor</p>
+        </div>
+        <button class="info-more-btn" data-sidebar-btn>
+          <span>Kontakt</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info-more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:kontakt@jakobklucke.de" class="contact-link">kontakt@jakobklucke.de</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Telefon</p>
+              <a href="tel:+4915224852187" class="contact-link">+49 1522 4852187</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Ort</p>
+              <address>Potsdam, Deutschland</address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-page-target="about">Über Mich</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page-target="resume">Resümee</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page-target="portfolio">Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-page-target="contact">Kontakt</button></li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">Über mich</h2>
+        </header>
+        <section class="about-text">
+          <p>Ich bin staatlich anerkannter Tonmeister mit einem Abschluss an der Wave Akademie für Digitale Medien in Berlin (Oktober 2024). Seit über zehn Jahren arbeite ich als Musikproduzent und bin außerdem im Bereich Filmton, Video Editing und Motion Design tätig.</p>
+          <p>Meine Schwerpunkte liegen in der Arbeit an Filmprojekten, Animationsdesigns und der Produktion eigener Musik. Zusätzlich betreibe ich einen YouTube-Kanal mit Tutorials rund um Musikproduktion und präsentiere meine Arbeiten regelmäßig auf Instagram und Spotify.</p>
+        <!-- </section> hier fehlte ein schließendes section-Tag, das ich basierend auf der Struktur ergänze -->
+        </section> 
+
+
+        <!-- NEUER ABSCHNITT: Meine Angebote / Portfolio-Links -->
+        <section class="service">
+          <h3 class="h3 service-title">Meine Angebote</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <a href="#" data-filter-link data-target-page="portfolio" data-filter-category="film" class="service-link-wrapper">
+                <div class="service-icon-box">
+                  <ion-icon name="videocam-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Filmprojekte</h4>
+                  <p class="service-item-text">Ton & Bearbeitung für Film. Klicken Sie hier, um meine Filmprojekte im Portfolio anzusehen.</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#" data-filter-link data-target-page="portfolio" data-filter-category="musikproduktionen" class="service-link-wrapper">
+                <div class="service-icon-box">
+                  <ion-icon name="musical-notes-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Musikproduktionen</h4>
+                  <p class="service-item-text">Produktion & Mixing. Klicken Sie hier, um meine Musikproduktionen im Portfolio anzusehen.</p>
+                </div>
+              </a>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="play-circle-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Meine Musik (Z0RY)</h4>
+                <div class="zory-links">
+                  <a href="https://linktr.ee/z0ry" target="_blank" class="zory-link-item">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Linktree</span>
+                  </a>
+                  <a href="https://www.youtube.com/@prod.by.z0ry" target="_blank" class="zory-link-item">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <span>YouTube</span>
+                  </a>
+                  <a href="https://open.spotify.com/intl-de/artist/0A0mYCGuCqBx56fOFkzCTc?dl_branch=1" target="_blank" class="zory-link-item">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Spotify</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wave Akademie für Digitale Medien, Berlin</h4>
+              <span>2021 – 2024</span>
+              <p class="timeline-text">Abschluss als staatlich anerkannter Tonmeister (Oktober 2024)</p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Freiberuflicher Tonmeister, Musikproduzent, Video Editor & Motion Designer</h4>
+              <span>2014 – heute</span>
+              <p class="timeline-text">Umfassende Tätigkeiten in der Musikproduktion (seit über 10 Jahren), im Filmtonbereich (Originalton, ADR, Synchron, Mischung), Video Editing und Motion Design für diverse Projekte und Auftraggeber. Erstellung von Animationen (Logos, Social Media, Erklärvideos) und YouTube-Tutorials.</p>
+            </li>
+            <li class="timeline-item experience-subcategory">
+              <h4 class="h4 timeline-item-title">Filmprojekte</h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Sugar</h4>
+              <span>Film (Kurzfilm, Premiere RIFFA Int. Film Festival)</span>
+              <p class="timeline-text">ADR & Synchron Tonmeister, Mischtonmeister</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Dating History</h4>
+              <span>Film (Kurzfilm, Immersive Germany Museum)</span>
+              <p class="timeline-text">Mischtonmeister, Filmtonassistent</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Falsches Leben</h4>
+              <span>Film (Kurzfilm)</span>
+              <p class="timeline-text">Filmtonmeister, Mischtonmeister</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Liebesbesuch</h4>
+              <span>Film (Kurzfilm)</span>
+              <p class="timeline-text">Filmtonassistent</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Zwischen Beethoven und Tute</h4>
+              <span>Film (Portrait)</span>
+              <p class="timeline-text">Filmtonmeister, Mischtonmeister</p>
+            </li>
+            <li class="timeline-item experience-subcategory">
+              <h4 class="h4 timeline-item-title">Musikproduktionen</h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Albumproduktion Maschu Maschu Berlin</h4>
+              <span>Musikproduktion</span>
+              <p class="timeline-text">Komplette Albumproduktion für Maschu Maschu Berlin.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">merKWürdig – Schaum vorm Mund</h4>
+              <span>Musikproduktion (Songs)</span>
+              <p class="timeline-text">Songproduktionen.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">merKWürdig – Sag mir wo die Blumen sind</h4>
+              <span>Musikproduktion (Songs)</span>
+              <p class="timeline-text">Songproduktionen.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <span class="select-value" data-select-value>Alle</span>
+              <span class="select-icon"><ion-icon name="chevron-down"></ion-icon></span>
+            </button>
+            <ul class="select-list">
+              <li class="select-item" data-select-item data-category="alle">Alle</li>
+              <li class="select-item" data-select-item data-category="film">Film</li>
+              <li class="select-item" data-select-item data-category="musikproduktionen">Musikproduktionen</li>
+            </ul>
+          </div>
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn data-category="alle">Alle</button></li>
+            <li class="filter-item"><button data-filter-btn data-category="film">Film</button></li>
+            <li class="filter-item"><button data-filter-btn data-category="musikproduktionen">Musikproduktionen</button></li>
+          </ul>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="film">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://i.postimg.cc/y8kktVVK/image.png" alt="Sugar">
+                </figure>
+                <h3 class="project-title">Sugar</h3>
+                <p class="project-category">Film – ADR & Synchron Tonmeister, Mischtonmeister</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="film">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://i.postimg.cc/nVm8dN8W/datinghistory-1.png" alt="Dating History">
+                </figure>
+                <h3 class="project-title">Dating History</h3>
+                <p class="project-category">Film – Mischtonmeister, Filmtonassistent</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="film">
+              <a href="#">
+                <figure class="project-img text-placeholder">
+                  <div class="placeholder-title">Falsches Leben</div>
+                </figure>
+                <h3 class="project-title">Falsches Leben</h3>
+                <p class="project-category">Film – Filmtonmeister, Mischtonmeister</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="film">
+              <a href="#">
+                <figure class="project-img text-placeholder">
+                  <div class="placeholder-title">Liebesbesuch</div>
+                </figure>
+                <h3 class="project-title">Liebesbesuch</h3>
+                <p class="project-category">Film – Filmtonassistent</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="film">
+              <a href="#">
+                <figure class="project-img text-placeholder">
+                  <div class="placeholder-title">Zwischen Beethoven und Tute</div>
+                </figure>
+                <h3 class="project-title">Zwischen Beethoven und Tute</h3>
+                <p class="project-category">Film – Filmtonmeister, Mischtonmeister</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="musikproduktionen">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://i.postimg.cc/jdWGW9cc/image.png" alt="Maschu Maschu">
+                </figure>
+                <h3 class="project-title">Maschu Maschu – Albumproduktion</h3>
+                <p class="project-category">Musikproduktion</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="musikproduktionen">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://i.postimg.cc/xCTZ9FqK/MA-Schaum-Presse-hoch.jpg" alt="merKWürdig – Schaum vorm Mund">
+                </figure>
+                <h3 class="project-title">merKWürdig – Schaum vorm Mund</h3>
+                <p class="project-category">Musikproduktion (Songs)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="musikproduktionen">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://i.postimg.cc/ydt2nyYc/image.jpg" alt="merKWürdig – Sag mir wo die Blumen sind">
+                </figure>
+                <h3 class="project-title">merKWürdig – Sag mir wo die Blumen sind</h3>
+                <p class="project-category">Musikproduktion (Songs)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- CONTACT -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Kontakt</h2>
+        </header>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Kontaktformular</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Vollständiger Name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email-Adresse" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Deine Nachricht" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Absenden</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Ionicons Scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Lokales JavaScript -->
+  <script  src="script.js"></script>
+
+</body>
+</html>
