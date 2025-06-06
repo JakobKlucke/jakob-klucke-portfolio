@@ -1620,3 +1620,12 @@ textarea.form-input {
 .service-icon-box ion-icon {
   color: var(--orange-yellow-crayola);
 }
+
+/* Stil für den Hinweis über dem Kontaktformular */
+.contact-form-note {
+  color: var(--light-gray); /* Passend zum restlichen Text */
+  font-size: var(--fs6);   /* Ähnliche Größe wie die Beschreibungstexte */
+  line-height: 1.6;
+  margin-bottom: 20px;     /* Abstand zum Formular darunter */
+  text-align: left;        /* Oder center, je nach Wunsch */
+}
