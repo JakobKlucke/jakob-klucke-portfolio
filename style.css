@@ -1621,14 +1621,12 @@ textarea.form-input {
   color: var(--orange-yellow-crayola);
 }
 
-/* Stil für den Hinweis über dem Kontaktformular - angepasst an den Fließtext-Stil */
-.contact-form-note {
-  color: var(--light-gray);      /* Farbe wie Fließtext */
-  font-size: var(--fs6);        /* Schriftgröße wie Fließtext */
-  font-weight: var(--fw300);    /* Schriftgewicht wie Fließtext */
-  line-height: 1.6;             /* Zeilenhöhe wie Fließtext */
-  margin-bottom: 25px;          /* Abstand zum Formular darunter, ähnlich wie .input-wrapper */
-  /* text-align: left;         Standardmäßig links, kannst du bei Bedarf ändern */
-  /* padding-left: 10px;       Optional, wenn du denselben Einzug wie im about-text möchtest */
-  /* padding-right: 10px;      Optional */
+/* Stil für den Hinweis über dem Kontaktformular - spezifischer und mit angepasstem Abstand */
+article.contact section.contact-form p.contact-form-note {
+  color: var(--light-gray);   /* Versuche dies zuerst. Wenn es nicht geht, probiere var(--white2) */
+  font-size: var(--fs6);
+  font-weight: var(--fw300);
+  line-height: 1.6;
+  margin-bottom: 40px;       /* Experimentiere mit diesem Wert (z.B. 30px, 40px, 50px) */
+  /* text-align: left; */    /* Einkommentieren und anpassen, falls nötig */
 }
