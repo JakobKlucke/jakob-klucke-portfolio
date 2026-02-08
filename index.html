@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jakob Klucke – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
   
   <!-- Google Fonts Poppins -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'>
@@ -19,7 +23,7 @@
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="https://i.postimg.cc/yYxCBx2D/Jakob-Memoji-Mittig-200.png" alt="avatar" width="80">
+          <img src="https://i.postimg.cc/yYxCBx2D/Jakob-Memoji-Mittig-200.png" alt="avatar" width="80" loading="eager" fetchpriority="high" decoding="async">
         </figure>
         <div class="info-content">
           <h1 class="name" title="Jakob Klucke">Jakob Klucke</h1>
@@ -106,19 +110,23 @@
                 <ion-icon name="play-circle-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Meine Musik (Z0RY)</h4>
+                  <h4 class="h4 service-item-title">Meine Musik (Z0RY & Talin)</h4>
                 <div class="zory-links">
-                  <a href="https://linktr.ee/z0ry" target="_blank" class="zory-link-item">
+                  <a href="https://linktr.ee/z0ry" target="_blank" rel="noopener noreferrer" class="zory-link-item">
                     <ion-icon name="link-outline"></ion-icon>
                     <span>Linktree</span>
                   </a>
-                  <a href="https://www.youtube.com/@prod.by.z0ry" target="_blank" class="zory-link-item">
+                  <a href="https://www.youtube.com/@prod.by.z0ry" target="_blank" rel="noopener noreferrer" class="zory-link-item">
                     <ion-icon name="logo-youtube"></ion-icon>
                     <span>YouTube</span>
                   </a>
-                  <a href="https://open.spotify.com/intl-de/artist/0A0mYCGuCqBx56fOFkzCTc?dl_branch=1" target="_blank" class="zory-link-item">
+                  <a href="https://open.spotify.com/intl-de/artist/0A0mYCGuCqBx56fOFkzCTc?dl_branch=1" target="_blank" rel="noopener noreferrer" class="zory-link-item">
                     <ion-icon name="play-circle-outline"></ion-icon>
                     <span>Spotify</span>
+                  </a>
+                  <a href="https://open.spotify.com/intl-de/artist/7hiBpYQLvPdL6mx4vNsEUt?si=WvSVOdjOQbG0S9s0xD58Lw" target="_blank" rel="noopener noreferrer" class="zory-link-item">
+                    <ion-icon name="musical-notes-outline"></ion-icon>
+                    <span>Neue Musik (Talin)</span>
                   </a>
                 </div>
               </div>
@@ -202,6 +210,21 @@
               <span>Musikproduktion (Songs)</span>
               <p class="timeline-text">Songproduktionen.</p>
             </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Talin</h4>
+              <span>Artist-Produktion</span>
+              <p class="timeline-text">Neue Musikproduktionen für Talin (Spotify Artist Release).</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Anja Rinno</h4>
+              <span>Private Musikproduktionen</span>
+              <p class="timeline-text">Privat produzierte Songs und individuelle Produktionsarbeit.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Schwarze Grütze</h4>
+              <span>Produktionen</span>
+              <p class="timeline-text">Musikproduktionen und produktionstechnische Begleitung.</p>
+            </li>
           </ol>
         </section>
       </article>
@@ -232,7 +255,7 @@
             <li class="project-item active" data-filter-item data-category="film">
               <a href="https://www.crew-united.com/de/Sugar__314513.html" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <img src="https://i.postimg.cc/y8kktVVK/image.png" alt="Sugar">
+                  <img src="https://i.postimg.cc/y8kktVVK/image.png" alt="Sugar" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">Sugar</h3>
                 <p class="project-category">Film – ADR & Synchron Tonmeister, Mischtonmeister</p>
@@ -241,7 +264,7 @@
             <li class="project-item active" data-filter-item data-category="film">
               <a href="https://www.deutschlandmuseum.de/dating-history/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <img src="https://i.postimg.cc/nVm8dN8W/datinghistory-1.png" alt="Dating History">
+                  <img src="https://i.postimg.cc/nVm8dN8W/datinghistory-1.png" alt="Dating History" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">Dating History</h3>
                 <p class="project-category">Film – Mischtonmeister, Filmtonassistent</p>
@@ -250,7 +273,7 @@
             <li class="project-item active" data-filter-item data-category="film">
               <a href="https://www.crew-united.com/de/Falsches-Leben__351716.html" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <img src="https://i.postimg.cc/d3jqXNn6/Falsches-Leben-Cover.jpg" alt="Falsches Leben">
+                  <img src="https://i.postimg.cc/d3jqXNn6/Falsches-Leben-Cover.jpg" alt="Falsches Leben" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">Falsches Leben</h3>
                 <p class="project-category">Film – Filmtonmeister, Mischtonmeister</p>
@@ -268,7 +291,7 @@
             <li class="project-item active" data-filter-item data-category="film">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                 <img src="https://i.postimg.cc/sfmvB2Cv/UUBlwey-V51-A-HD.jpg" alt="Zwischen Beethoven und Tute">
+                 <img src="https://i.postimg.cc/sfmvB2Cv/UUBlwey-V51-A-HD.jpg" alt="Zwischen Beethoven und Tute" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">Zwischen Beethoven und Tute</h3>
                 <p class="project-category">Film – Filmtonmeister, Mischtonmeister</p>
@@ -277,7 +300,7 @@
             <li class="project-item active" data-filter-item data-category="musikproduktionen">
               <a href="https://on.soundcloud.com/A76gVp4Y6hJiGqV3k4" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <img src="https://i.postimg.cc/jdWGW9cc/image.png" alt="Maschu Maschu">
+                  <img src="https://i.postimg.cc/jdWGW9cc/image.png" alt="Maschu Maschu" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">Maschu Maschu – Albumproduktion</h3>
                 <p class="project-category">Musikproduktion</p>
@@ -286,7 +309,7 @@
             <li class="project-item active" data-filter-item data-category="musikproduktionen">
               <a href="https://www.maerkwuerdig.de/aktuelles-programm/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <img src="https://i.postimg.cc/xCTZ9FqK/MA-Schaum-Presse-hoch.jpg" alt="merKWürdig – Schaum vorm Mund">
+                  <img src="https://i.postimg.cc/xCTZ9FqK/MA-Schaum-Presse-hoch.jpg" alt="merKWürdig – Schaum vorm Mund" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">merKWürdig – Schaum vorm Mund</h3>
                 <p class="project-category">Musikproduktion (Songs)</p>
@@ -295,10 +318,37 @@
             <li class="project-item active" data-filter-item data-category="musikproduktionen">
               <a href="https://www.maerkwuerdig.de/aktuelles-programm/" target="_blank" rel="noopener noreferrer">
                 <figure class="project-img">
-                  <img src="https://i.postimg.cc/ydt2nyYc/image.jpg" alt="merKWürdig – Sag mir wo die Blumen sind">
+                  <img src="https://i.postimg.cc/ydt2nyYc/image.jpg" alt="merKWürdig – Sag mir wo die Blumen sind" loading="lazy" decoding="async">
                 </figure>
                 <h3 class="project-title">merKWürdig – Sag mir wo die Blumen sind</h3>
                 <p class="project-category">Musikproduktion (Songs)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="musikproduktionen">
+              <a href="https://open.spotify.com/intl-de/artist/7hiBpYQLvPdL6mx4vNsEUt?si=WvSVOdjOQbG0S9s0xD58Lw" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img text-placeholder">
+                  <div class="placeholder-title">Talin</div>
+                </figure>
+                <h3 class="project-title">Talin – Neue Musik</h3>
+                <p class="project-category">Musikproduktion / Artist Release</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="musikproduktionen">
+              <a href="mailto:kontakt@jakobklucke.de?subject=Privatproduktion%20Anja%20Rinno">
+                <figure class="project-img text-placeholder">
+                  <div class="placeholder-title">Anja Rinno</div>
+                </figure>
+                <h3 class="project-title">Anja Rinno – Private Musikproduktionen</h3>
+                <p class="project-category">Private Musikproduktionen</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="musikproduktionen">
+              <a href="mailto:kontakt@jakobklucke.de?subject=Produktion%20Schwarze%20Gr%C3%BCtze">
+                <figure class="project-img text-placeholder">
+                  <div class="placeholder-title">Schwarze Grütze</div>
+                </figure>
+                <h3 class="project-title">Schwarze Grütze – Produktionen</h3>
+                <p class="project-category">Musikproduktion</p>
               </a>
             </li>
           </ul>
@@ -342,10 +392,10 @@
 
   <!-- Ionicons Scripts -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script nomodule defer src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   
   <!-- Lokales JavaScript -->
-  <script  src="script.js"></script>
+  <script defer src="script.js"></script>
 
 </body>
 </html>
