@@ -1544,35 +1544,6 @@ textarea.form-input {
   border-radius: inherit;
 }
 
-/* Stile für die Links im "Meine Musik (Z0RY)" Block */
-.zory-links {
-  margin-top: 15px; /* Etwas Abstand zum Titel */
-  display: flex;
-  flex-direction: column; /* Links untereinander */
-  gap: 10px; /* Abstand zwischen den Links */
-}
-
-.zory-link-item {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Abstand zwischen Icon und Text */
-  padding: 10px 15px;
-  background: var(--onyx); /* Ähnlicher Hintergrund wie Buttons/Input-Felder */
-  color: var(--light-gray);
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background var(--transition1), color var(--transition1);
-}
-
-.zory-link-item:hover {
-  background: var(--jet);
-  color: var(--orange-yellow-crayola);
-}
-
-.zory-link-item ion-icon {
-  font-size: 20px; /* Passende Größe für die Icons */
-}
-
 @media (min-width: 580px) {
   .service-item-link {
     padding: 0;
@@ -1585,14 +1556,10 @@ textarea.form-input {
     gap: 18px;
     padding: 30px;
   }
-  .zory-links {
-    flex-direction: row; /* Links nebeneinander auf größeren Bildschirmen */
-    justify-content: center; /* Zentriert die Links */
-  }
-  .zory-link-item {
-    min-width: 150px; /* Gibt den Links eine Mindestbreite */
-    justify-content: center;
-  }
+}
+
+.about .service-list {
+  grid-template-columns: 1fr;
 }
 
 /* Vergrößert den Abstand unter der Hauptüberschrift im Resume-Bereich */
