@@ -1526,19 +1526,22 @@ textarea.form-input {
 /* Styling für die neuen Blöcke auf der About-Seite */
 
 /* Macht das gesamte Service-Item klickbar, wenn es von einem <a> umschlossen ist */
-.service-item > a.service-link-wrapper {
-  display: block; /* Nimmt die volle Breite/Höhe des Listenelements ein */
-  color: inherit; /* Erbt Textfarbe, um Standard-Linkblau zu vermeiden */
-  text-decoration: none; /* Entfernt Unterstreichung */
-  /* Stellt sicher, dass der Inhalt korrekt ausgerichtet ist, falls das Service-Item Flexbox verwendet */
-  width: 100%; 
-  display: flex; /* Wenn service-item innen display:flex hat */
-  flex-direction: column; /* Oder row, je nach original .service-item Layout */
-  align-items: inherit; /* Erbt Ausrichtung vom Parent */
-  gap: inherit; /* Erbt Lücke vom Parent */
-  padding: 20px; /* Derselbe Padding wie .service-item, um Klickbereich zu definieren */
-  margin: -20px; /* Negativer Margin, um den Padding des Parents auszugleichen, damit die Box nicht größer wird */
-  border-radius: 14px; /* Derselbe Radius wie .service-item */
+.service-item-link {
+  padding: 0;
+  overflow: hidden;
+}
+
+.service-item-link > a.service-link-wrapper {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: inherit;
 }
 
 /* Stile für die Links im "Meine Musik (Z0RY)" Block */
@@ -1570,17 +1573,17 @@ textarea.form-input {
   font-size: 20px; /* Passende Größe für die Icons */
 }
 
-/* Optional: Wenn die Service-Items bereits flex sind, und du möchtest, dass der Link den gesamten Bereich abdeckt */
-.service-item {
-    /* Stelle sicher, dass das service-item selbst position: relative hat, wenn der Link absolut positioniert wird,
-       oder passe an, dass der Link einfach display: block und 100% Höhe/Breite hat, je nach Struktur */
-}
-
 @media (min-width: 580px) {
-  .service-item > a.service-link-wrapper {
-    flex-direction: row; /* Für größere Bildschirme, falls service-item horizontal wird */
+  .service-item-link {
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .service-item-link > a.service-link-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
     padding: 30px;
-    margin: -30px;
   }
   .zory-links {
     flex-direction: row; /* Links nebeneinander auf größeren Bildschirmen */
