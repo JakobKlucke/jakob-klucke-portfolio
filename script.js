@@ -9,6 +9,7 @@ const selectValueDisplay = document.querySelector('[data-select-value]');
 const selectItems = document.querySelectorAll('[data-select-item]');
 const filterBtns = document.querySelectorAll('[data-filter-btn]');
 const projectItems = document.querySelectorAll('[data-filter-item]');
+const projectSectionHeadings = document.querySelectorAll('[data-project-section-heading]');
 
 const form = document.querySelector('[data-form]');
 const formInputs = document.querySelectorAll('[data-form-input]');
@@ -133,6 +134,11 @@ function filterByCategory(category) {
   const selected = category || 'alle';
   projectItems.forEach((item) => {
     item.classList.toggle('active', selected === 'alle' || item.getAttribute('data-category') === selected);
+  });
+
+  projectSectionHeadings.forEach((heading) => {
+    const headingCategory = heading.getAttribute('data-section-category');
+    heading.classList.toggle('active', selected === 'alle' || headingCategory === selected);
   });
 
   filterBtns.forEach((btn) => {
